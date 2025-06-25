@@ -71,10 +71,6 @@ async def main(message: cl.Message):
         await msg.update()
         print(f"Error: {str(e)}")
 
-# ✅ ADDING THIS ONLY:
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8000))
-    cl.run(port=port, host="0.0.0.0")
 
 
 
